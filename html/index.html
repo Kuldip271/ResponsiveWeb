@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
+
+  <script type='text/javascript'>
+    window.addEventListener('scroll',() => {
+
+        if(document.documentElement.scrollTop > 450){
+
+            const element1 = document.querySelector('.nav-list');
+            element1.style.backgroundColor = 'white';
+            const element2 = document.querySelectorAll('.link li a');
+
+            for(let i=0;i<element2.length;i++){
+                element2[i].style.color = 'grey';
+            }
+
+            const element3 = document.querySelector('.logo img');
+            element3['src'] = "../HTML-CSS/Assets/logo-active.png" ;
+           
+
+        }
+        else{
+            const elem1 = document.querySelector('.nav-list');
+            elem1.style.backgroundColor = '';
+            const elem2 = document.querySelectorAll('.link li a');
+            for(let i=0;i<elem2.length;i++){
+                elem2[i].style.color = '';
+            }
+            const elem3 = document.querySelector('.logo img');
+            elem3['src'] = "../HTML-CSS/Assets/logo.png" ;
+           
+        }
+    }
+    )
+
+  </script>
+
 </head>
 
     <nav class="nav-bar ">
