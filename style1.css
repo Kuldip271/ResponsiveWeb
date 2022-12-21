@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.navbar{
+    display: flex;
+}
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+   
+}
+
+.nav-list li{
+  list-style: none;
+  padding: 38px;
+}
+
+.nav-list li a{
+     text-decoration: none;
+     color: white;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(0, 217, 255);
+}
+
+.active {
+    background-color: rgb(0,195,255);
+    padding: 10px;
+    border-radius: 5px;
+}
+.dropnav{
+    display: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-flow: column;
+    content: '';
+    background: url('./Assets/header.jpg') no-repeat center center/cover;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 100% 92%, 0 100%, 0% 50%);
+    top: 0px;
+    left: 0px;
+    height: 110vh;
+    z-index: -1;
+}
+
+
+
+@-webkit-keyframes typing {from {width:0;}}
+@-webkit-keyframes blink-caret {50% {border-color: transparent;}}
+
+#animation1{
+    border-right: .1em solid rgb(0,195,255);
+    width:30ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(29,end), blink-caret .5s step-end infinite alternate;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: -135px;
+}
+.first,.second,.third{
+    margin:20px;
+    position: relative;
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+   }
+
+td {
+    padding: 15px;
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+    color: #ddd;
+}
+th{
+padding: 22px 0 100px 0;
+color: #ddd;
+
+}
+
+.cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 330px;
+        flex-flow: column;
+}
+
+.serv{
+    display: flex;
+    justify-content: center;
+}
+
+.serv-1,.serv-2,.serv-3{
+    margin:20px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: 292px;
+    width:300px;
+    border: 2px solid grey;
+   
+}
+
+.serv-1:hover,.serv-2:hover,.serv-3:hover
+{
+    justify-content: flex-start;
+    border: 2px solid rgb(0,195,255);
+}
+.serv-1:hover p,.serv-2:hover p,.serv-3:hover p{
+    display: block !important;  
+    margin-top: 10%; 
+}
+.serv-1:hover img,.serv-2:hover img,.serv-3:hover img{
+    margin-top: -5% !important;
+    margin-left: 45% !important; 
+    background-color: white;
+    transition: .2s;
+    z-index: 100;
+}
+.serv-1:hover h3,.serv-2:hover h3,.serv-3:hover h3{
+    margin-top: 10% !important;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1150px) {
+
+    .serv{
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+ 
+@media only screen and (max-width:608px) {
+
+    #animation1{
+        font-size: 25px !important;
+    }
+}
+@media only screen and (max-width: 1230px) {
+
+    .center{
+        flex-flow: column;
+        align-items: center;
+    } 
+    .container::before{
+        height: 130vh;
+       
+    }
+} 
+
+
+@media only screen and (max-width: 412px) {
+
+    .container{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .cont{
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 750px)
+{
+    .navbar{
+        display: none;
+    }
+    .dropnav{
+        display:block;
+    }
+    .dropdown{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position:fixed;
+        z-index: 100;
+        height: 94.4px;
+        align-items: center;
+    }
+
+      
+      
+      
+      .droplink a:hover{
+          text-decoration: none;
+          color:  rgb(0,195,255);
+      }
+      
+      .droplink .active {
+        background-color:  rgb(0,195,255);
+        padding: 14px;
+        border-radius: 2px;
+        width: 48px;
+        margin-left: 290px;
+        margin-bottom: 132px;
+      }
+    
+      .droplink span i{
+        margin-top: 103px;
+        width: 654px;
+        height: 45px;
+        background-color:  rgb(0,195,255);
+        padding-top: 30px;
+        margin-left: 2px;
+      }
+
+      .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        position: relative;
+        display:inline-block;
+
+      }
+      
+      .droplink {
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        padding-top: 1010px;
+        left: -89px;
+        padding-bottom: 90px;
+        padding-right: 110px;
+        margin-right: -80px;
+      }
+
+      .droplink a{
+        margin-right: 100px;
+        color: black;
+        padding: 40px;
+        text-decoration: none;
+        display: block;
+        padding-left: 245px;
+
+      }
+
+      
+} 
+
+@media only screen and (max-width: 425px)
+{
+    .droplink{
+        margin-right: -78px;
+    }
+    .droplink a{
+        padding-left: 192px;
+    }
+    .droplink .active{
+        margin-left: 179px;
+    }
+    .droplink span i{
+        width: 435px
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2560px)
+{
+    .container{
+        height: 100vh;
+    }
+    .cont{
+        height: 814px;
+    }
+
+    .cont p{
+        font-size: 39px;
+    }
+    .cont h1{
+        font-size: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        height: 95vh;
+    }
+    .cont{
+        height: 20vh;
+    }
+    .first,.second,.third{
+        margin: 8px;
+    }
+    .cont p{
+        font-size: 25px;
+    }
+    .cont h1{
+        font-size: 40px !important;
+    }
+}
+@media only screen and (max-width: 1440px)
+{
+    .cont p{
+        font-size: 30px;
+    }
+    .cont h1{
+        font-size: 35px !important;
+    }
+   
+    .cont{
+        height: 54vh;
+    }
+}
+@media only screen and (max-width: 375px)
+{
+   
+    .droplink a{
+        padding-left: 167px;
+    }
+    .droplink .active{
+        margin-left: 154px;
+    }
+    .droplink span i{
+        width: 370px
+    }
+
+    #animation1{
+        font-size: 20px !important;
+    }
+    .cont p{
+        font-size: 18px !important;
+    }
+    .container{
+        height: 90vh;
+    }
+    .first,.second,.third{
+        margin: 20px;
+        position: relative;
+        display: flex;
+        left: 0px;
+        width: 340px;
+        overflow-x: hidden;
+    }
+    .third h2{
+        font-size: 17px !important;
+    }
+}
+@media only screen and (max-width: 320px)
+{
+    .droplink a{
+        padding-left: 134px;
+    }
+    .droplink .active{
+        margin-left: 120px;
+    }
+    .droplink span i{
+        width: 303px
+    }
+
+    .container{
+        width: 39vh;
+    }
+    .first,.second,.third{
+        margin: 20px;
+        position: relative;
+        display: flex;
+        left: 0px;
+        width: 293px;
+        overflow-x: hidden;
+    }
+    .third h2{
+        font-size: 14px !important;
+    }
+    .cont p{
+        font-size: 13px;
+    }
+    .cont h1{
+        font-size: 28px !important;
+    }
+   .All-container{
+    overflow-x: hidden;
+   }
+   table{
+    margin-right: 80px;
+   }
+   #animation1{
+    font-size: 19px !important;
+   }
+}
