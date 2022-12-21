@@ -62,7 +62,7 @@
     flex-flow: column;
     content: '';
     background: url('./Assets/header.jpg') no-repeat center center/cover;
-    clip-path: polygon(0 0, 100% 0, 100% 91%, 100% 92%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 100% 94%, 0 100%, 0% 51%);
     top: 0px;
     left: 0px;
     height: 110vh;
