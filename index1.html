@@ -24,6 +24,7 @@
                 
                 for (let i = 0; i < ele2.length; i++) {
                     ele2[i].style.color = 'grey'; 
+                    ele2[4].style.color= 'white';
                 }
                 ele2[0].style.color= 'rgb(0,195,255)';
                 
@@ -31,6 +32,7 @@
                  {
                     ele2[0].style.color='grey';
                     ele2[1].style.color='rgb(0,195,255)';
+                   
                  }
 
                 const ele3=document.querySelector('.logo img');
@@ -56,7 +58,7 @@
 
                 const ele2=document.querySelectorAll('.link li a');
                 for (let i = 0; i < ele2.length; i++) {
-                    ele2[i].style.color = 'white' 
+                    ele2[i].style.color = 'white' ;
                 }
                 const ele3=document.querySelector('.logo img');
                 const ele3dropdown=document.querySelector('.droplogo img');
@@ -65,7 +67,7 @@
 
 
                 const ele4dropdown=document.querySelector('.dropbtn');
-                ele4dropdown.style.color="white";
+                ele4dropdown.style.color="black";
 
             }
 
@@ -78,24 +80,20 @@
                 const ele5dropdown = document.querySelector('.droplink');
                 ele5dropdown.style.display="none";
                 const mainContainer = document.getElementsByClassName('All-container');
-                mainContainer[0].style.display = 'block';
-    
-               
+                mainContainer[0].style.display = 'block';           
                 
             }
         
         function Hamburger (){
             const dropLink = document.getElementsByClassName('droplink');
-            dropLink[0].style.display = 'block'
+            dropLink[0].style.display = 'block';
             const mainContainer = document.getElementsByClassName('All-container');
-            mainContainer[0].style.display = 'none'
+            mainContainer[0].style.display = 'none';
             
         }
 
         
     </script>
-
-
 
 </head>
 <body>
@@ -106,7 +104,7 @@
                 <img src="./Assets/logo.png" alt="logo">
             </div>
                 <div class="dropbtn" onclick="Hamburger()">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" style="color: grey;"></i>
                 </div>
                 <div class="droplink">
                     <a href="#intro">Intro</a>
@@ -147,29 +145,29 @@
             <div class="center">
                 <div class="first">
                     <img src="./Assets/table-1.jpg">
-                    <div style="position: absolute; display:flex; justify-content: center;width: 370px; height: 286px;">
+                    <div class="t1">
                         <table>
                             <tr style="height: 130px; width:370px;">
-                              <th>Today's Schedule</th>
+                              <th><b>Today's Schedule</b></th>
                             </tr>
                             <tr>
-                              <td>Early Exercise</td>
-                              <td>8:30-10:30</td>
+                              <td><b>Early Exercise</b></td>
+                              <td><b>8:30-10:30</b></td>
                             </tr>
                             <tr>
-                                <td>Muscle Building</td>
-                                <td>8:30-10:30</td>
+                                <td><b> Building</b></td>
+                                <td><b>8:30-10:30</b></td>
                               </tr>
                               <tr>
-                                <td>Cardio</td>
-                                <td>8:30-10:30</td>
+                                <td><b>Cardio</b></td>
+                                <td><b>8:30-10:30</b></td>
                               </tr>
                           </table>
                     </div>   
                 </div>
                 <div class="second">
                     <img src="./Assets/table-2.jpg">
-                    <div style="position: absolute;display:flex; justify-content: center;width: 370px;height: 286px;">
+                    <div class="t2">
                         <p style="position: absolute;color:#ddd;top: 5%; left: 10%"><b>Premium Membership</b></p>
                         <h2 style="position: absolute;color: #ddd;top: 65%;left: 10%">Register Today</h2>
                         <h1 style="position: absolute;color: #ddd;top:72%;left: 10%">20% Discount</h1>
@@ -178,7 +176,7 @@
                 </div>
                 <div class="third">
                     <img src="./Assets/table-3.jpg">
-                    <div style="position: absolute;display:flex; justify-content: center;width: 370px;height: 286px;">
+                    <div class="t3">
                         <p style="position: absolute;top: 5%; left: 10%;color:#ddd;"><b>Happy Clients</b></p>
                         <h2 style="position: absolute;top: 40%; left: 10%;color:#ddd;"><b>I couldn't be more happy with the results!</b></h2>
                         <p style="position: absolute;top: 80%; left: 10%;color:#ddd; font-size: 20px;">Adam Jordan</p>
@@ -190,11 +188,9 @@
     
             <div class="cont">
                 <h1><b>Services</b></h1>
-                <p style="text-align: center;">Achieve the best results with our wide variety of training options!</p>
+                <p style="text-align: center; color: grey;">Achieve the best results with our wide variety of training options!</p>
             </div>
     
-    
-            
     
             <div class="serv">
     
@@ -202,7 +198,7 @@
                     <img src="./Assets/icons/heart-blue.png" style="height: 25px; width: 25px;margin-top: 30%;margin-left:45%;padding: 0 5px;">
                     <div>
                         <h3 style="text-align: center;margin-top: 10%;">Cardio Training</h3>
-                        <p style="text-align: center;display: none;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
+                        <p style="text-align: center;display: none; color: grey;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
                    </div>
                 </div>
     
@@ -210,7 +206,7 @@
                     <img src="./Assets/icons/guru-blue.png" style="height: 25px; width: 25px;margin-top: 30%;margin-left:45%;">
                     <div>
                         <h3 style="text-align: center;margin-top: 10%;">Yoga Pilates</h3>
-                        <p style="text-align: center;display: none;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
+                        <p style="text-align: center;display: none; color: grey;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
                     </div>
                 </div>
     
@@ -218,14 +214,13 @@
                     <img src="./Assets/icons/weight-blue.png" style="height: 25px; width: 25px;margin-top: 30%;margin-left:45%;">
                     <div>
                         <h3 style="text-align: center;margin-top: 10%;">Power Training</h3>
-                        <p style="text-align: center;display: none;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
+                        <p style="text-align: center;display: none;color: grey;">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes</p>
                     </div>
                 </div>
                 </div>
              </div>
     </div>
-        
-     
-         
+          
 </body>
 </html>
+

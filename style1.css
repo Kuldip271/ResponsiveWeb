@@ -47,7 +47,7 @@
 .active {
     background-color: rgb(0,195,255);
     padding: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .dropnav{
     display: none;
@@ -69,7 +69,13 @@
     z-index: -1;
 }
 
-
+.t1,.t2.t3{
+    position: absolute;
+    display:flex; 
+    justify-content: center;
+    width: 370px;
+    height: 286px;
+}
 
 @-webkit-keyframes typing {from {width:0;}}
 @-webkit-keyframes blink-caret {50% {border-color: transparent;}}
@@ -142,6 +148,19 @@ color: #ddd;
 .serv-1:hover p,.serv-2:hover p,.serv-3:hover p{
     display: block !important;  
     margin-top: 10%; 
+    animation: zoom-in-zoom-out 0.5s ease 1;
+}
+
+@keyframes zoom-in-zoom-out {
+    0%{
+        transform:scale(0.6,0.6);
+    }
+    50%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform:scale(1,1);
+    }
 }
 .serv-1:hover img,.serv-2:hover img,.serv-3:hover img{
     margin-top: -5% !important;
@@ -226,7 +245,8 @@ color: #ddd;
       
       .droplink a:hover{
           text-decoration: none;
-          color:  rgb(0,195,255);
+          color: black;
+          /* color: white; */
       }
       
       .droplink .active {
@@ -292,16 +312,17 @@ color: #ddd;
 @media only screen and (max-width: 425px)
 {
     .droplink{
-        margin-right: -78px;
+        margin-right: -83px;
     }
     .droplink a{
         padding-left: 192px;
     }
     .droplink .active{
+        margin-top: 35px;
         margin-left: 179px;
     }
     .droplink span i{
-        width: 435px
+        width: 409px;
     }
     
 }
@@ -367,10 +388,11 @@ color: #ddd;
         padding-left: 167px;
     }
     .droplink .active{
+        margin-top: 35px;
         margin-left: 154px;
     }
     .droplink span i{
-        width: 370px
+        width: 360px;
     }
 
     #animation1{
@@ -400,10 +422,11 @@ color: #ddd;
         padding-left: 134px;
     }
     .droplink .active{
+        margin-top: 35px;
         margin-left: 120px;
     }
     .droplink span i{
-        width: 303px
+        width: 303px;
     }
 
     .container{
